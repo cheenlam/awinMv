@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css">
+    <script src="js/vue_3.2.19.js"></script>
+    <title>awinMv</title>
+</head>
+
+<body>
+    <div id="indexBox">
+        <div class="mvBox" >
+            <div class="banner">
+                <img src="images/banner.jpg">
+            </div>
+            <div class="mvbox-view">
+                <video :src="mvSrc" :poster="mvImg"  preload="auto" controls ></video>
+            </div>
+        </div>
+    </div>
+    <script>
+        Vue.createApp({
+            data() {
+                return {
+                    mvSrc: "https://awscc3001.r18.com/litevideo/freepv/j/jul/jul00149/jul00149_dmb_w.mp4",
+                    mvImg:'images/mvImg.jpg'
+                };
+            },
+            methods: {
+            },
+            mounted() {    
+            },
+        }).mount("#indexBox");
+    </script>
+</body>
+
+</html>
