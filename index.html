@@ -12,12 +12,14 @@
 
 <body>
     <div id="indexBox">
-        <div class="mvBox" >
-            <div class="banner">
-                <img src="images/banner.jpg">
-            </div>
+        <div class="mvBox">
+            <a href="http://www.awin77c.com/m56777-3-1">
+                <div class="banner">
+                    <img src="images/banner.jpg">
+                </div>
+            </a>
             <div class="mvbox-view">
-                <video :src="mvSrc"  preload="auto" controls ></video>
+                <video :src="mvSrc" preload="auto" controls></video>
             </div>
         </div>
     </div>
@@ -28,10 +30,8 @@
                     mvSrc: "movie/mv.mp4",
                 };
             },
-            methods: {
-            },
-            mounted() {    
-            },
+            methods: {},
+            mounted() {},
         }).mount("#indexBox");
     </script>
 </body>
