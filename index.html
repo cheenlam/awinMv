@@ -17,7 +17,7 @@
                 <img src="images/banner.jpg">
             </div>
             <div class="mvbox-view">
-                <video :src="mvSrc" :poster="mvImg"  preload="auto" controls ></video>
+                <video :src="mvSrc"  preload="auto" controls ></video>
             </div>
         </div>
     </div>
@@ -25,8 +25,7 @@
         Vue.createApp({
             data() {
                 return {
-                    mvSrc: "https://awscc3001.r18.com/litevideo/freepv/j/jul/jul00149/jul00149_dmb_w.mp4",
-                    mvImg:'images/mvImg.jpg'
+                    mvSrc: "movie/mv.mp4",
                 };
             },
             methods: {
