@@ -16,7 +16,7 @@ body{
         width: 100%;
         border-bottom: 1px solid #CEA972;
         position: absolute;
-        @include pos(tl,0)
+        @include pos(tl,0);
     }
     
     .mvbox-view{
