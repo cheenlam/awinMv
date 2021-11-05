@@ -14,13 +14,15 @@
     <div id="indexBox">
         <div class="mvBox">
             <a href="http://www.awin77c.com/m56777-3-1">
-                <div class="banner">
+                <div class="banner"  ref="banner">
                     <img src="images/banner.jpg">
                 </div>
             </a>
-            <div class="mvbox-view">
-                <video :src="mvSrc" :poster="mvImg" preload="auto" controls></video>
-            </div>
+            <div class="mvbox-cnt">
+                <div class="mvbox-view">
+                    <video :src="mvSrc" :poster="mvImg" preload="auto" controls></video>
+                </div>
+            </div>  
         </div>
     </div>
     <script>
@@ -31,8 +33,10 @@
                     mvImg: "images/mvImg.jpg",
                 };
             },
-            methods: {},
-            mounted() {},
+            methods: {
+            },
+            mounted() {
+            },
         }).mount("#indexBox");
     </script>
 </body>
