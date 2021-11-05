@@ -19,7 +19,7 @@
                 </div>
             </a>
             <div class="mvbox-view">
-                <video :src="mvSrc" preload="auto" controls></video>
+                <video :src="mvSrc" :poster="mvImg" preload="auto" controls></video>
             </div>
         </div>
     </div>
@@ -28,6 +28,7 @@
             data() {
                 return {
                     mvSrc: "movie/mv.mp4",
+                    mvImg: "images/mvImg.jpg",
                 };
             },
             methods: {},
